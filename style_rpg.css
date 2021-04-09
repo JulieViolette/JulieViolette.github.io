@@ -1,0 +1,233 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+
+
+body{
+    background-color:#3d3b42;
+    color:white;
+    padding:0;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+    height:100vh;
+}
+h1{
+    font-size:3em;
+    filter: drop-shadow(4px 8px  10px #1f1f1f);
+    margin-bottom:0px;
+    z-index:-1;
+}
+#barredeco1{
+    width:5vw;
+    position:fixed;
+    height:100%;
+    left:0px;
+    top:0px;
+    background-color:crimson;
+}
+#barredeco2{
+    width:5vw;
+    position:fixed;
+    height:100%;
+    right:0px;
+    top:0px;
+    background-color:crimson;
+}
+p{
+    font-size:1.5em;
+}
+.Type{
+width:max-content;
+}
+.Type p {
+    
+    overflow: hidden; 
+    z-index:-1;
+    font-size:1.2em;
+    color:#aaaaaa;
+    border-right: .15em solid crimson; 
+    filter: drop-shadow(4px 8px  10px #1f1f1f);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: crimson; }
+  }
+
+  #top{
+    position:fixed;
+    top:1em;
+    left:8vw;
+    right:8vw;
+    height:auto;
+    z-index:-1;
+  }
+  .fenetre{
+      width:880px;
+      max-width:80%;
+      background-color:#636060;
+      padding:20px;
+      border-radius:8px;
+      box-shadow:4px 8px  10px #1f1f1f;
+      font-size:1.6em;
+      text-align: justify;
+      
+
+  }
+  .btn-grid{
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    gap:10px;
+    margin-top:20px;
+  }
+
+  .btn{
+      background-color:#ffffff;
+      border:2px solid #3d3b42;
+      border-radius:6px;
+      padding:5px 10px;
+      outline:none;
+      color:#3d3b42;
+      font-size:1em;
+      transition:0.1s;
+  }
+  .btn:hover{
+    background-color:#ffdede;
+}
+.btn:active{
+    background-color:#ffdede;
+    color:crimson;
+}
+
+#hearts{
+    position: fixed;
+      display:flex;
+      flex-direction: row;
+      flex-direction: wrap;
+      width:50%;
+      float: right;
+      height:auto;
+      bottom:30px;
+      align-content:space-around;
+      position:fixed;
+      z-index:-1;
+  }
+  
+  #h1{
+      margin:auto;
+      margin-bottom:35px;
+      width:80px;
+      height:80px;
+      animation-name: animres;
+      animation-duration: 3s;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+  }
+  #h2{
+      margin:auto;
+      margin-bottom:35px;
+      width:80px;
+      height:80px;
+      animation-name: animres;
+      animation-duration: 3s;
+      animation-delay: 0.8s;
+      animation-iteration-count: infinite;
+  }
+  #h3{
+      margin:auto;
+      margin-bottom:35px;
+      width:80px;
+      height:80px;
+      animation-name: animres;
+      animation-duration: 3s;
+      animation-delay: 1.7s;
+      animation-iteration-count: infinite;
+  }
+  @keyframes animres {
+    0%{width:80px;
+        height:80px;
+        margin-bottom:35px;}
+
+    50%{width:85px;
+        height:85px;
+        margin-bottom:45px;}
+        
+    100%{width:80px;
+        height:80px;
+        margin-bottom:35px;}
+}
+
+#signa{
+    position:fixed;
+    font-size:0.8em;
+    color:#aaaaaa;
+    bottom:3px;
+    margin-bottom:2px;
+}
+
+a{
+    color:#aaaaaa;
+}
+@media (max-width:700px) {
+    h1{
+        font-size:1.5em;
+    }
+    #top{
+        top:0px;
+        font-size:1em;
+    }
+    #signa{
+        bottom:0%;
+        width:80%;
+        text-align: center;
+        font-size:0.6em;
+    }
+    @keyframes animres {
+        0%{width:40px;
+            height:40px;
+            margin-bottom:22px;}
+    
+        50%{width:35px;
+            height:35px;
+            margin-bottom:32px;}
+            
+        100%{width:40px;
+            height:40px;
+            margin-bottom:22px;}
+            
+    }
+    .Type{
+        visibility: hidden;
+    }
+    #h1 #h2 #h3{
+        width:40px;
+        height:40px;
+        margin-bottom:22px;
+    }
+    .fenetre{
+        font-size:1.6em;
+    }
+}
+
+
+
+
+
+

@@ -2,26 +2,39 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<title>Terre et Bois</title>
-	<link rel="stylesheet" href="styleglobal.css"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
+	<title>RPJul</title>
+	<link rel="stylesheet" href="style_rpg.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"/>
+    <script defer src="script_rpg.js"></script>
 </head>
 <body>
-    <?php include 'entete.php';?>
-    <section><div id=barredeco></div></section>
-    <section id='fondglobal'>
-        
-        <section>
-            <div classe='bloccontenu'>
-                <h2>Bienvenue sur le site de Sylviane et Jean Jacques Cleret</h2>
-                <article>
-                    <p>Bla bla bla bla bla bla bla</p>
-                    <img src='img/LIGHTLARNAK.png'>
-                </article>
+<!--Haut de page et barres décoratives-->
+<section id='top'>
+<h1>SI ELLE ME QUITTE PAS...</h1>
+<div class=Type>
+<p>HELLO ! Attention il y a 8 fins possibles :)</p>
+</div></section>
+<div id='barredeco1'></div><div id='barredeco2'></div>
 
-            </div>
-    </section>  
+<!--Interface du jeu-->
+<div class="fenetre">
+    <div id="text">Text</div>
+    <div id="option-buttons" class="btn-grid">
+        <button class="btn">Option 1</button>
+        <button class="btn">Option 2</button>
+        <button class="btn">Option 3</button>
+        <button class="btn">Option 4</button>
+    </div>
+</div>
+
+<!--Coeurs déco + Signature-->
+<div id='hearts'>
+    <img src='heart.png' id='h1'>
+    <img src='heart.png' id='h2'>
+    <img src='heart.png' id='h3'>
+</div>
+<div id='signa'><p>By Rocco, code du jeu honteusement <a href='https://codepen.io/WebDevSimplified/pen/xoKZbd?editors=1010'>volé</a> sur internet et traffiqué oops</p></div>
 
 </body>
 </html>
